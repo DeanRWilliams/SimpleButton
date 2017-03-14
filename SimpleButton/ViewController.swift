@@ -9,7 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // Comment 
+    @IBOutlet weak var theLabel: UILabel!
+    
+    @IBAction func buttonChange(_ sender: Any) {
+        theLabel.text = "Cool World!"
+        print("Cool Button tapped!")
+    }
+    
 
+    @IBAction func buttonReser(_ sender: Any) {
+        theLabel.text = "Hello World!"
+        print("Reset Button tapped")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
