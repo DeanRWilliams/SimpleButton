@@ -12,17 +12,18 @@ class ViewController: UIViewController {
     
     // Main Label
     @IBOutlet weak var theLabel: UILabel!
-    
     @IBOutlet weak var rubyLabel: UILabel!
+    
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     var buttonpress = 0
     @IBAction func buttonChange(_ sender: Any) {
-        theLabel.text = "Cool World!"
-        rubyLabel.text = "Dean Label!"
-        buttonpress = buttonpress + 1
-        
-        if buttonpress > 10{
-            print("Button pressed more than 10 times!")}
+        print(text1)
+        print(text1.text ?? 0)
+        print(text2.text ?? 0)
+        theLabel.text = "Answer is... \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     
 

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,41 +22,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi dude " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acD-f4-dJK">
-                                <rect key="frame" x="157" y="90" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi dude " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acD-f4-dJK">
+                                <rect key="frame" x="108" y="80" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsL-7S-IZF">
-                                <rect key="frame" x="158" y="282" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Text"/>
-                                <connections>
-                                    <action selector="buttonChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8FE-nE-fpT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j73-bT-hSw">
-                                <rect key="frame" x="165" y="434" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j73-bT-hSw">
+                                <rect key="frame" x="158" y="567" width="72" height="30"/>
                                 <state key="normal" title="Reset Text"/>
                                 <connections>
                                     <action selector="buttonReser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emS-8o-nHi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello Ruby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-dC-yi9">
-                                <rect key="frame" x="166" y="160" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Ruby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-dC-yi9">
+                                <rect key="frame" x="136" y="160" width="102" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="2I3-DY-0vh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XGM-3B-S0x">
+                                <rect key="frame" x="136" y="332" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="BCm-eJ-X1g"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsL-7S-IZF">
+                                <rect key="frame" x="144" y="475" width="86" height="30"/>
+                                <state key="normal" title="Change Text"/>
+                                <connections>
+                                    <action selector="buttonChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8FE-nE-fpT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfS-Cc-jRF">
+                                <rect key="frame" x="136" y="266" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Ne3-Au-gxj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="acD-f4-dJK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92" id="4hu-iQ-RBm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j73-bT-hSw" secondAttribute="bottom" constant="70" id="50F-Tg-pzX"/>
+                            <constraint firstItem="j73-bT-hSw" firstAttribute="top" secondItem="fsL-7S-IZF" secondAttribute="bottom" constant="62" id="AP5-3M-ghH"/>
+                            <constraint firstItem="XGM-3B-S0x" firstAttribute="top" secondItem="cfS-Cc-jRF" secondAttribute="bottom" constant="36" id="JOF-fa-9LW"/>
+                            <constraint firstItem="cfS-Cc-jRF" firstAttribute="top" secondItem="Aev-dC-yi9" secondAttribute="bottom" constant="85" id="Rk0-nG-af2"/>
+                            <constraint firstItem="Aev-dC-yi9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ToG-8v-lSp"/>
+                            <constraint firstItem="Aev-dC-yi9" firstAttribute="centerX" secondItem="fsL-7S-IZF" secondAttribute="centerX" id="Xq4-4e-Hao"/>
+                            <constraint firstItem="Aev-dC-yi9" firstAttribute="leading" secondItem="cfS-Cc-jRF" secondAttribute="leading" id="cg5-AH-CIr"/>
+                            <constraint firstItem="acD-f4-dJK" firstAttribute="centerX" secondItem="Aev-dC-yi9" secondAttribute="centerX" id="dBw-f7-qAU"/>
+                            <constraint firstItem="acD-f4-dJK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="lo7-4G-dCM"/>
+                            <constraint firstItem="Aev-dC-yi9" firstAttribute="top" secondItem="acD-f4-dJK" secondAttribute="bottom" constant="59" id="pbv-dm-Y6Y"/>
+                            <constraint firstItem="fsL-7S-IZF" firstAttribute="trailing" secondItem="j73-bT-hSw" secondAttribute="trailing" id="vds-Yw-Chc"/>
+                            <constraint firstItem="cfS-Cc-jRF" firstAttribute="leading" secondItem="XGM-3B-S0x" secondAttribute="leading" id="yAR-6I-fJQ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="rubyLabel" destination="Aev-dC-yi9" id="dck-sp-pTh"/>
+                        <outlet property="text1" destination="cfS-Cc-jRF" id="dib-az-ZE9"/>
+                        <outlet property="text2" destination="XGM-3B-S0x" id="y4K-PE-2Yy"/>
                         <outlet property="theLabel" destination="acD-f4-dJK" id="gdZ-6s-OyF"/>
                     </connections>
                 </viewController>
